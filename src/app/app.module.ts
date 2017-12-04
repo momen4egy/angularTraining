@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app.routing.module';
 
 import { AppComponent } from './app.component';
 
+// Services
+import { ClientDataService } from './shared/services/client-data.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -13,7 +16,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ClientDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
